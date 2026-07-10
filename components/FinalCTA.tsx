@@ -1,3 +1,5 @@
+import { APP_URL } from "@/lib/site";
+
 export default function FinalCTA() {
   return (
     <section className="py-20 sm:py-28">
@@ -30,7 +32,7 @@ export default function FinalCTA() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href="#pricing"
+                href={APP_URL}
                 className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 font-display text-base font-bold text-coral-600 shadow-soft transition hover:bg-cream-50 hover:shadow-lift"
               >
                 Start for free

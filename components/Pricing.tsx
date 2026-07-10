@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { APP_URL, CONTACT_EMAIL } from "@/lib/site";
 
 type Billing = "monthly" | "yearly";
 
@@ -28,6 +29,7 @@ interface Tier {
   description: string;
   features: string[];
   cta: string;
+  href: string;
   popular: boolean;
 }
 
@@ -46,6 +48,7 @@ const tiers: Tier[] = [
       "Community support",
     ],
     cta: "Start for free",
+    href: APP_URL,
     popular: false,
   },
   {
@@ -64,6 +67,7 @@ const tiers: Tier[] = [
       "Priority rendering",
     ],
     cta: "Start for free",
+    href: APP_URL,
     popular: true,
   },
   {
@@ -81,6 +85,7 @@ const tiers: Tier[] = [
       "Dedicated support",
     ],
     cta: "Talk to us",
+    href: `mailto:${CONTACT_EMAIL}`,
     popular: false,
   },
 ];
@@ -188,7 +193,7 @@ export default function Pricing() {
                 <p className="mt-3 text-sm text-brown-700">{tier.description}</p>
 
                 <a
-                  href="#"
+                  href={tier.href}
                   className={`mt-6 inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 font-display text-base font-bold shadow-soft transition ${
                     tier.popular
                       ? "bg-coral-500 text-white hover:bg-coral-600 hover:shadow-lift"

@@ -89,9 +89,9 @@ Tailwind v4 classes available:
 - Add `"use client"` ONLY if the component uses state/handlers (accordion, toggle, menu).
 - Escape apostrophes in JSX text (`&apos;` or use curly quotes “ ” ’) — `react/no-unescaped-entities` is enforced. NO `any`.
 - Anchor ids that must exist (nav links to them): `#features`, `#how-it-works`, `#pricing`, `#faq`.
-- All CTAs link to `#pricing` or `href="#"` (it's a marketing site; no real app yet).
-  "Start for free" is the primary CTA text everywhere; secondary is "Watch how it works" or
-  similar linking to `#how-it-works`.
+- App CTAs ("Start for free", "Sign in") link to `APP_URL` from `lib/site.ts`
+  (https://app.tofu.video); Studio's "Talk to us" uses `CONTACT_EMAIL`. Secondary CTAs like
+  "Watch how it works" link to `#how-it-works`.
 
 ## Page order (app/page.tsx assembles these)
 

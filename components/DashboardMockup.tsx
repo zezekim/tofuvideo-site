@@ -51,7 +51,7 @@ export default function DashboardMockup() {
         <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
         <span className="h-2.5 w-2.5 rounded-full bg-tofublue-500" />
         <span className="absolute left-1/2 -translate-x-1/2 rounded-full border border-cream-200 bg-white px-4 py-0.5 text-xs text-brown-500">
-          app.tofuvideo.com
+          app.tofu.video
         </span>
       </div>
 

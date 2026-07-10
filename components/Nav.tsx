@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { APP_URL } from "@/lib/site";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -43,13 +44,13 @@ export default function Nav() {
         {/* Right actions */}
         <div className="hidden items-center gap-4 md:flex">
           <a
-            href="#"
+            href={APP_URL}
             className="text-sm font-semibold text-brown-700 transition hover:text-brown-900"
           >
             Sign in
           </a>
           <a
-            href="#pricing"
+            href={APP_URL}
             className="inline-flex items-center gap-2 rounded-full bg-coral-500 px-5 py-2.5 font-display text-sm font-bold text-white shadow-soft transition hover:bg-coral-600 hover:shadow-lift"
           >
             Start for free
@@ -119,14 +120,14 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="#"
+            href={APP_URL}
             onClick={() => setOpen(false)}
             className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-brown-700 transition hover:bg-cream-100 hover:text-brown-900"
           >
             Sign in
           </a>
           <a
-            href="#pricing"
+            href={APP_URL}
             onClick={() => setOpen(false)}
             className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral-500 px-5 py-2.5 font-display text-sm font-bold text-white shadow-soft transition hover:bg-coral-600 hover:shadow-lift"
           >

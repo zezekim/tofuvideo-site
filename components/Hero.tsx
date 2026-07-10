@@ -1,5 +1,6 @@
 import Image from "next/image";
 import DashboardMockup from "./DashboardMockup";
+import { APP_URL } from "@/lib/site";
 
 function CheckIcon() {
   return (
@@ -92,7 +93,7 @@ export default function Hero() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
-                href="#pricing"
+                href={APP_URL}
                 className="inline-flex items-center gap-2 rounded-full bg-coral-500 px-7 py-3.5 font-display text-base font-bold text-white shadow-soft transition hover:bg-coral-600 hover:shadow-lift"
               >
                 Start for free
