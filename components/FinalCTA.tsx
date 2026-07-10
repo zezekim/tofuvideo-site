@@ -51,10 +51,10 @@ export default function FinalCTA() {
                 </svg>
               </a>
               <a
-                href="#pricing"
+                href="#how-it-works"
                 className="inline-flex items-center gap-2 rounded-full border border-white/40 px-8 py-4 font-display text-base font-bold text-white transition hover:bg-white/10"
               >
-                See pricing
+                See how it works
               </a>
             </div>
 

@@ -1,8 +1,8 @@
 const columns = [
   {
     heading: "Product",
-    links: ["Features", "How it works", "Pricing", "Changelog"],
-    hrefs: ["#features", "#how-it-works", "#pricing", "#"],
+    links: ["Features", "How it works", "Changelog"],
+    hrefs: ["#features", "#how-it-works", "#"],
   },
   {
     heading: "Resources",

@@ -88,7 +88,8 @@ Tailwind v4 classes available:
 - Every component: TypeScript, **default export**, **no props**, file in `components/`.
 - Add `"use client"` ONLY if the component uses state/handlers (accordion, toggle, menu).
 - Escape apostrophes in JSX text (`&apos;` or use curly quotes “ ” ’) — `react/no-unescaped-entities` is enforced. NO `any`.
-- Anchor ids that must exist (nav links to them): `#features`, `#how-it-works`, `#pricing`, `#faq`.
+- Anchor ids that must exist (nav links to them): `#features`, `#how-it-works`, `#faq`.
+  (Pricing is intentionally absent for now — no public pricing.)
 - App CTAs ("Start for free", "Sign in") link to `APP_URL` from `lib/site.ts`
   (https://app.tofu.video); Studio's "Talk to us" uses `CONTACT_EMAIL`. Secondary CTAs like
   "Watch how it works" link to `#how-it-works`.
@@ -101,8 +102,7 @@ Tailwind v4 classes available:
 4. `Features` — bg-cream-100
 5. `HowItWorks` — pipeline
 6. `Showcase` — formats + personas, dark section bg-brown-950
-7. `Pricing`
-8. `Testimonials` — bg-cream-100
-9. `FAQ`
-10. `FinalCTA`
-11. `Footer` — bg-brown-950
+7. `Testimonials` — bg-cream-100
+8. `FAQ`
+9. `FinalCTA`
+10. `Footer` — bg-brown-950

@@ -1,3 +1,5 @@
+import { APP_URL } from "@/lib/site";
+
 const personas = [
   { emoji: "🩺", name: "Doctor", vibe: "evidence-based and reassuring" },
   { emoji: "🔧", name: "Engineer", vibe: "first-principles, loves a number" },
@@ -115,7 +117,7 @@ export default function Showcase() {
                 ))}
                 <li>
                   <a
-                    href="#pricing"
+                    href={APP_URL}
                     className="flex items-center gap-3 rounded-2xl border border-dashed border-brown-800 px-3 py-2.5 text-sm font-semibold text-coral-400 transition hover:border-coral-400"
                   >
                     <span

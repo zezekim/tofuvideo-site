@@ -41,7 +41,7 @@ const items: FaqItem[] = [
   {
     question: "Is there an API?",
     answer:
-      "Studio plans include the full REST API: queue topics, poll render status, fetch the finished MP4. It’s the same API that powers the dashboard, so anything you can click, you can automate.",
+      "Yes — a full REST API: queue topics, poll render status, fetch the finished MP4. It’s the same API that powers the dashboard, so anything you can click, you can automate.",
   },
 ];
 
