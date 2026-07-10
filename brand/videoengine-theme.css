@@ -1,0 +1,134 @@
+/* ============================================================
+   tofuvideo brand re-theme for the VideoEngine dashboard
+   ------------------------------------------------------------
+   Paste this whole block into frontend/app/globals.css,
+   immediately AFTER `@import "tailwindcss";`.
+
+   Tailwind v4 resolves utilities from these variables, so every
+   existing class (bg-indigo-500, text-zinc-400, …) remaps to the
+   tofuvideo palette with no component edits:
+
+     indigo → coral (primary; mid-ramp sits one step dark so
+                     white button labels keep ≥3:1 contrast)
+     zinc   → mink country-warm neutrals
+     emerald→ matcha (success / voice)
+     amber  → brand amber (warning / in-progress)
+     red    → berry (error)
+     sky    → tofublue (stock)
+     violet → heather (review)   fuchsia → heather (AI)
+
+   See BRAND.md §9 for the three raw-hex edits this can't reach
+   (Logo.tsx, Sidebar.tsx, LoginScreen.tsx) and the optional
+   caption-highlight default.
+   ============================================================ */
+
+@theme {
+  /* indigo → coral (primary) */
+  --color-indigo-50: #fff6f5;
+  --color-indigo-100: #fce4e1;
+  --color-indigo-200: #f9cdc8;
+  --color-indigo-300: #febfb7;
+  --color-indigo-400: #ef7a70;
+  --color-indigo-500: #e2635b;
+  --color-indigo-600: #c94f48;
+  --color-indigo-700: #933e38;
+  --color-indigo-800: #78322d;
+  --color-indigo-900: #5f2723;
+  --color-indigo-950: #4d1b18;
+
+  /* zinc → mink (warm neutrals) */
+  --color-zinc-50: #f4f0ec;
+  --color-zinc-100: #ece6e1;
+  --color-zinc-200: #d0c6be;
+  --color-zinc-300: #bdafa5;
+  --color-zinc-400: #a59588;
+  --color-zinc-500: #8a7a6d;
+  --color-zinc-600: #78685b;
+  --color-zinc-700: #4a3e35;
+  --color-zinc-800: #332a23;
+  --color-zinc-900: #231b16;
+  --color-zinc-950: #191310;
+
+  /* emerald → matcha (success / complete / voice) */
+  --color-emerald-50: #e3f1e6;
+  --color-emerald-100: #d4ebd8;
+  --color-emerald-200: #b7dfc0;
+  --color-emerald-300: #96d0a3;
+  --color-emerald-400: #73ba85;
+  --color-emerald-500: #55a06a;
+  --color-emerald-600: #408b57;
+  --color-emerald-700: #307445;
+  --color-emerald-800: #245d36;
+  --color-emerald-900: #1d4c2b;
+  --color-emerald-950: #0a2c15;
+
+  /* amber → brand amber (warning / in-progress) */
+  --color-amber-50: #fff8ef;
+  --color-amber-100: #fceed3;
+  --color-amber-200: #feddb6;
+  --color-amber-300: #ffc57e;
+  --color-amber-400: #f5a93f;
+  --color-amber-500: #ea9526;
+  --color-amber-600: #bf7b03;
+  --color-amber-700: #9f6606;
+  --color-amber-800: #815200;
+  --color-amber-900: #694203;
+  --color-amber-950: #412701;
+
+  /* red → berry (error / destructive) */
+  --color-red-50: #faddda;
+  --color-red-100: #ffcec9;
+  --color-red-200: #feb3ad;
+  --color-red-300: #fd9089;
+  --color-red-400: #f26763;
+  --color-red-500: #d64545;
+  --color-red-600: #c02f33;
+  --color-red-700: #a31f25;
+  --color-red-800: #84151b;
+  --color-red-900: #6c1116;
+  --color-red-950: #410105;
+
+  /* sky → tofublue (📷 stock / info) */
+  --color-sky-50: #eef5fc;
+  --color-sky-100: #ddeafb;
+  --color-sky-200: #a9ceff;
+  --color-sky-300: #83b9ff;
+  --color-sky-400: #5d9ef2;
+  --color-sky-500: #3d82d8;
+  --color-sky-600: #2f6cba;
+  --color-sky-700: #1b5ba6;
+  --color-sky-800: #124887;
+  --color-sky-900: #0e3a6e;
+  --color-sky-950: #011f43;
+
+  /* violet → heather (needs review) */
+  --color-violet-50: #f5f0ff;
+  --color-violet-100: #efe6ff;
+  --color-violet-200: #e3d2fe;
+  --color-violet-300: #d4b9ff;
+  --color-violet-400: #c09df1;
+  --color-violet-500: #a783d9;
+  --color-violet-600: #916dc2;
+  --color-violet-700: #7959a4;
+  --color-violet-800: #624786;
+  --color-violet-900: #4f396c;
+  --color-violet-950: #2f2044;
+
+  /* fuchsia → heather (✨ AI-generated) */
+  --color-fuchsia-50: #f5f0ff;
+  --color-fuchsia-100: #efe6ff;
+  --color-fuchsia-200: #e3d2fe;
+  --color-fuchsia-300: #d4b9ff;
+  --color-fuchsia-400: #c09df1;
+  --color-fuchsia-500: #a783d9;
+  --color-fuchsia-600: #916dc2;
+  --color-fuchsia-700: #7959a4;
+  --color-fuchsia-800: #624786;
+  --color-fuchsia-900: #4f396c;
+  --color-fuchsia-950: #2f2044;
+}
+
+/* replaces the indigo ::selection in the engine's globals.css */
+::selection {
+  background: rgb(239 122 112 / 0.35);
+}
