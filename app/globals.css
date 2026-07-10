@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  /* tofuvideo brand palette — pulled from the sticker logo */
+  --color-cream-50: #fdf9f0;
+  --color-cream-100: #faf3e3;
+  --color-cream-200: #f3e8cf;
+  --color-cream-300: #e9dab8;
+
+  --color-brown-950: #2b1f18;
+  --color-brown-900: #3b2a21;
+  --color-brown-800: #4d382b;
+  --color-brown-700: #6b5344;
+  --color-brown-500: #9a8271;
+  --color-brown-300: #c9b8a8;
+
+  --color-coral-100: #fce4e1;
+  --color-coral-200: #f9cdc8;
+  --color-coral-400: #f4948b;
+  --color-coral-500: #ef7a70;
+  --color-coral-600: #e2635b;
+  --color-coral-700: #c94f48;
+
+  --color-tofublue-100: #ddeafb;
+  --color-tofublue-500: #3d82d8;
+  --color-tofublue-600: #2f6cba;
+
+  --color-amber-100: #fceed3;
+  --color-amber-400: #f5a93f;
+  --color-amber-500: #ea9526;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-baloo), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 2px 8px rgb(59 42 33 / 0.06), 0 12px 32px rgb(59 42 33 / 0.08);
+  --shadow-lift: 0 4px 12px rgb(59 42 33 / 0.08), 0 24px 48px rgb(59 42 33 / 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: clip;
+  background-color: var(--color-cream-50);
+  color: var(--color-brown-800);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-coral-200);
+  color: var(--color-brown-900);
+}
