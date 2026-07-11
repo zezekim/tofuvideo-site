@@ -59,7 +59,7 @@ export default function FinalCTA() {
             </div>
 
             <p className="mt-6 text-xs text-white/70">
-              Free plan · No credit card · Cancel anytime
+              Early access · Free to try · Your keys or fully local
             </p>
           </div>
         </div>

@@ -4,7 +4,7 @@ import TrustBar from "@/components/TrustBar";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import Showcase from "@/components/Showcase";
-import Testimonials from "@/components/Testimonials";
+import RealRenders from "@/components/RealRenders";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -19,7 +19,7 @@ export default function Home() {
         <Features />
         <HowItWorks />
         <Showcase />
-        <Testimonials />
+        <RealRenders />
         <FAQ />
         <FinalCTA />
       </main>

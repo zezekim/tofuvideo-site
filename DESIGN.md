@@ -102,7 +102,14 @@ Tailwind v4 classes available:
 4. `Features` — bg-cream-100
 5. `HowItWorks` — pipeline
 6. `Showcase` — formats + personas, dark section bg-brown-950
-7. `Testimonials` — bg-cream-100
+7. `RealRenders` — bg-cream-100, actual pipeline output videos from `public/demo/`
 8. `FAQ`
 9. `FinalCTA`
 10. `Footer` — bg-brown-950
+
+## Honesty rule
+
+This is an early project. NO invented usage metrics, ratings, customer counts, or
+testimonials anywhere on the page. Social proof = real renders (`RealRenders`) and true
+capability facts (`TrustBar`). Frame the product as early access; "free to try" is fine,
+specific plan/pricing claims are not (pricing is intentionally unannounced).

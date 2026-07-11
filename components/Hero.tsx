@@ -134,11 +134,11 @@ export default function Hero() {
             <ul className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-brown-500">
               <li className="inline-flex items-center gap-1.5">
                 <CheckIcon />
-                Free plan
+                Early access
               </li>
               <li className="inline-flex items-center gap-1.5">
                 <CheckIcon />
-                No credit card
+                Free to try
               </li>
               <li className="inline-flex items-center gap-1.5">
                 <CheckIcon />

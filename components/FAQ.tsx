@@ -11,12 +11,12 @@ const items: FaqItem[] = [
   {
     question: "Do I own the videos?",
     answer:
-      "Yes, fully. Every export is watermark-free on every plan — including the free one — and commercial use is included. Publish, monetize, or hand them to clients; they’re yours.",
+      "Yes, fully. Every export is watermark-free and commercial use is included. Publish, monetize, or hand them to clients; they’re yours.",
   },
   {
     question: "How long does a video take?",
     answer:
-      "Most 10-minute videos render in under 10 minutes. Scenes render in parallel, and single-scene tweaks take seconds because only that scene re-renders — not the whole video.",
+      "It depends on length and which providers you use, but scenes render in parallel so it’s minutes, not hours. Single-scene tweaks take seconds because only that scene re-renders — not the whole video.",
   },
   {
     question: "Can I use my own voice or footage?",

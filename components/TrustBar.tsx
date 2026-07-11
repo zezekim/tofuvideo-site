@@ -1,15 +1,16 @@
 import type { ReactNode } from "react";
 
+/** Honest capability strip — product facts, not usage claims. */
 export default function TrustBar() {
-  const stats: {
-    number: string;
+  const facts: {
+    headline: string;
     label: string;
     accent: string;
     icon: ReactNode;
   }[] = [
     {
-      number: "38,000+",
-      label: "videos rendered",
+      headline: "Topic → MP4",
+      label: "the whole pipeline, end to end",
       accent: "text-coral-500",
       icon: (
         // clapperboard
@@ -31,11 +32,11 @@ export default function TrustBar() {
       ),
     },
     {
-      number: "1,900+",
-      label: "creators & teams",
+      headline: "3 formats",
+      label: "16:9 · 9:16 · 1:1 from one choice",
       accent: "text-amber-400",
       icon: (
-        // users
+        // frames
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -46,19 +47,18 @@ export default function TrustBar() {
           className="h-5 w-5"
           aria-hidden="true"
         >
-          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-          <circle cx="9" cy="7" r="4" />
-          <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          <rect x="3" y="5" width="12" height="9" rx="2" />
+          <rect x="17" y="5" width="4" height="14" rx="1.5" />
+          <rect x="3" y="16" width="8" height="3" rx="1.5" />
         </svg>
       ),
     },
     {
-      number: "9.2 min",
-      label: "average render",
+      headline: "$0 mode",
+      label: "runs fully local on your hardware",
       accent: "text-tofublue-500",
       icon: (
-        // timer / zap-clock
+        // cpu
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -69,18 +69,18 @@ export default function TrustBar() {
           className="h-5 w-5"
           aria-hidden="true"
         >
-          <circle cx="12" cy="13" r="8" />
-          <path d="M12 9v4l2.5 2.5" />
-          <path d="M10 2h4" />
+          <rect x="5" y="5" width="14" height="14" rx="2" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" />
         </svg>
       ),
     },
     {
-      number: "4.8/5",
-      label: "creator rating",
+      headline: "10+ personas",
+      label: "narrators with a point of view",
       accent: "text-coral-500",
       icon: (
-        // star
+        // mic
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -91,7 +91,10 @@ export default function TrustBar() {
           className="h-5 w-5"
           aria-hidden="true"
         >
-          <path d="M11.5 2.8a.55.55 0 0 1 1 0l2.4 5a.55.55 0 0 0 .4.3l5.5.8a.55.55 0 0 1 .3.94l-4 3.9a.55.55 0 0 0-.15.5l.94 5.45a.55.55 0 0 1-.8.58L12.25 17.7a.55.55 0 0 0-.5 0l-4.9 2.57a.55.55 0 0 1-.8-.58L7 14.24a.55.55 0 0 0-.16-.5l-4-3.9a.55.55 0 0 1 .31-.94l5.5-.8a.55.55 0 0 0 .41-.3z" />
+          <rect x="9" y="2" width="6" height="12" rx="3" />
+          <path d="M5 10a7 7 0 0 0 14 0" />
+          <path d="M12 17v4" />
+          <path d="M8 21h8" />
         </svg>
       ),
     },
@@ -99,20 +102,20 @@ export default function TrustBar() {
 
   return (
     <section
-      aria-label="tofuvideo by the numbers"
+      aria-label="What tofuvideo does"
       className="border-y border-cream-200 bg-white/60 py-10"
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
-          {stats.map((stat) => (
-            <div key={stat.label} className="flex flex-col items-center text-center">
+          {facts.map((fact) => (
+            <div key={fact.label} className="flex flex-col items-center text-center">
               <div className="flex items-center gap-2">
-                <span className={stat.accent}>{stat.icon}</span>
-                <span className="font-display text-3xl font-bold text-brown-900">
-                  {stat.number}
+                <span className={fact.accent}>{fact.icon}</span>
+                <span className="font-display text-2xl font-bold text-brown-900 sm:text-3xl">
+                  {fact.headline}
                 </span>
               </div>
-              <p className="mt-1 text-sm text-brown-500">{stat.label}</p>
+              <p className="mt-1 text-sm text-brown-500">{fact.label}</p>
             </div>
           ))}
         </div>
